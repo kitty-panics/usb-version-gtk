@@ -1,6 +1,3 @@
-/* usbver_gtk3.c - libusb 监听 U 盘 + GTK3 滚动日志
- * gcc -O2 -o usbver_gtk3 usbver_gtk3.c $(pkg-config --cflags --libs gtk+-3.0 libusb-1.0)
- */
 #include <stdio.h>
 #include <time.h>
 #include <unistd.h>
@@ -82,7 +79,7 @@ static gpointer usb_thread(gpointer d) {
 
 static void activate(GtkApplication *app, gpointer d) {
     GtkWidget *w = gtk_application_window_new(app);
-    gtk_window_set_title(GTK_WINDOW(w), "USB 监听");
+    gtk_window_set_title(GTK_WINDOW(w), "USB 速度监听");
     gtk_window_set_default_size(GTK_WINDOW(w), 900, 360);
 
     GtkWidget *sw = gtk_scrolled_window_new(NULL, NULL);

@@ -13,3 +13,5 @@ gcc -O2 -o usbver-gtk usbver-gtk.c $(pkg-config --cflags --libs gtk+-3.0 libusb-
 ```Bash
 sudo ./usbver-gtk
 ```
+
+![示例](usbver-gtk.png)
